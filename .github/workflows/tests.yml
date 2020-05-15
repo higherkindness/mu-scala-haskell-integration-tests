@@ -3,7 +3,8 @@ name: Integration Tests
 on:
   push:
     branches: master
-  # TODO schedule
+  schedule:
+    - cron: '0 2 * * *'
 
 jobs:
   test:
