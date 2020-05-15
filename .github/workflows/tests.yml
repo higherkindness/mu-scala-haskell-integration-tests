@@ -9,5 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout project
+        uses: actions/checkout@v2
       - name: Run the tests
         run: ./run.sh
