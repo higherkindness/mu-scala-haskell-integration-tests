@@ -1,0 +1,13 @@
+name: Integration Tests
+
+on:
+  push:
+    branches: master
+  # TODO schedule
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run the tests
+        run: ./run.sh
