@@ -1,0 +1,13 @@
+os: linux
+dist: bionic
+language: scala
+jdk: openjdk8
+services:
+  - docker
+script: "./run.sh"
+notifications:
+  slack:
+    rooms:
+      - secure: "V0O6E1Tch5VieCDRe0gEBenMlZriXeNnQzxdGNkKtghN5CQHihdrczkMitBQyTUFdi7d1jAsdARp+G+JOnXDZDUZWHmRi2kkSGUsYZcVbC7xl7uVTIPWwrCTmTKLupE4Hlv/dNlzwyilkTzC0OdOXt3k1Z3ZUGyp978peWTuZ693m5ntrqoplt4UK2xyCRMo0wd25OPI5GGTB2ZUQlE8Wy1m4NcwpaOzTfXd9VR8OGv1yDFqLsDZgVgLTZBjXxv8HA3Uj9fp/yqbZBnlVFaYjdhfR5xeBDrBFfhy6INh01ZZ5NGo6+IlFk245O7YT4ZtS/lu+araJQ8lhgkynybAGelrao14fR/GtID62Q6rDYi7n5isP7Iuzub0sTZnk+ObCiNN3wxPBFPZMZ9abTR0xyyzl3xba6LT25AXYoD309X1tEDeqsUn6yDLWtyR5Fd6v/ezQXuM9L5eM+fuXrfDA94KCiZ8kNM6b+ycSV7rnwePNHwqFLjl5n2BqG+XLjeMCpovdO2MJx2tzSKMME73uWWT4LMdD+2hu6uv+WNcbVZdTSFie3a3QBQ4zx5wHqQAnD2Mdnaib0Upyd63skGEP7U0tPnWWw1XfN1dnbI2UrWCZ+fgs/ylUJlHUyMHGfuP70rNSnGZbVKpGXFEABLntMt2zSIvBv+qkdDZFiOsTuk="
+    on_success: change
+    on_failure: always
