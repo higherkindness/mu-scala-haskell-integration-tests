@@ -11,3 +11,13 @@ Mu-Haskell.
 
 This means it is testing the master `HEAD` of Mu-Scala against the master `HEAD`
 of Mu-Haskell every night.
+
+## Where it runs
+
+The tests run every night on
+[CircleCI](https://app.circleci.com/pipelines/github/higherkindness/mu-scala-haskell-integration-tests).
+
+They can't run as a GitHub Actions workflow because building the Docker image
+needs too much disk space.
+
+They used to run on Travis CI until it stopped being free.
