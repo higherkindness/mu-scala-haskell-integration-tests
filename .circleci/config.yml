@@ -9,7 +9,7 @@ jobs:
       image: ubuntu-2004:202010-01
     steps:
       - checkout
-      - run: apt install -y jq
+      - run: sudo apt install -y jq
       - run:
           name: Install sbt
           command: |
