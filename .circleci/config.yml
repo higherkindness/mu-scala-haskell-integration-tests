@@ -15,5 +15,5 @@ jobs:
           command: |
             curl -fLo cs https://git.io/coursier-cli-linux
             chmod +x cs
-            cs install sbt
+            ./cs install sbt
       - run: ./run.sh
