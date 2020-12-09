@@ -5,8 +5,8 @@ workflows:
   pushed:
     jobs:
       - test:
-        context:
-          - mu-scala-haskell-int-tests
+          context:
+            - mu-scala-haskell-int-tests
   nightly:
     triggers:
       - schedule:
@@ -17,8 +17,8 @@ workflows:
                 - master
     jobs:
       - test:
-        context:
-          - mu-scala-haskell-int-tests
+          context:
+            - mu-scala-haskell-int-tests
 jobs:
   test:
     machine:
